@@ -1,0 +1,38 @@
+body{
+    background: black
+}
+
+header {
+    background-color: black;
+    border:1px solid white;
+    width:100%;
+    box-sizing: border-box;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+.playground {
+    margin-top: 10px;
+    background-color: black;
+    border-radius: 10px;
+    width:100%;
+    box-sizing: border-box;
+    height: 80vh;
+    text-align: center;
+    color: white;
+}
+
+.player {
+    background: url("./player.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    width: 64px;
+    height: 40px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 5%;
+    /* left: 50; */
+}

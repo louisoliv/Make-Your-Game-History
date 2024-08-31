@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link href="https://fonts.cdnfonts.com/css/halo" rel="stylesheet" />
+    <link
+      href="https://fonts.cdnfonts.com/css/arcade-classic"
+      rel="stylesheet"
+    />
+    <title>Halo Space Invaders</title>
+  </head>
+  <body>
+    <!-- Menu Section -->
+    <div id="menu" class="screen">
+      <!-- <audio autoplay id="audioClick">
+        <source id="music" src="../style/audio/Halo_3.mp3" type="audio/mp3" />
+      </audio> -->
+      <!-- <div class="img-stock">
+            <img src="../style/img/sound.png" class="volume" id="sound"></img>
+            <img src="../style/img/mute.png" class="volume" id="soundMuted" style="display: none;" ></img>
+        </div> -->
+      <div class="menu-container">
+        <div class="menu">
+          <h1>HALO 3</h1>
+          <ul class="menu-list">
+            <li id="new-game-btn">New Game</li>
+            <li id="story-mode">Story Game</li>
+            <li id="parameters-btn">Settings</li>
+            <li>Scores</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Section -->
+    <div id="game" class="game-section" style="display: none">
+      <div class="header">
+        <p>SPACE INVADERS</p>
+      </div>
+      <div id="safeTimer">
+        <p>Timer :</p>
+        <p id="chronoDisplay"></p>
+      </div>
+      <div class="sub_header">
+        <h2 class="results">Score: 0</h2>
+        <h2 id="fps">FPS:</h2>
+        <h2 id="playerLives" class="lives">Lives: 3</h2>
+      </div>
+      <div class="container">
+        <div class="pauseMenu">
+          <h2>Pause</h2>
+          <button id="resumeButton">Resume</button>
+        </div>
+      </div>
+      <div class="grid"></div>
+      <div class="footer">
+        <h3>Louis OLIVIER</h3>
+        <h3>Jérémy CAILLY</h3>
+        <h3>Doreen OUBBAHI</h3>
+      </div>
+    </div>
+
+    <!-- Story Section -->
+    <div id="story1" class="story-section1" style="display: none">
+      <div class="container_story">
+        <div class="first_part">
+          <div class="overlayStory">
+            <p class="p_story1">
+              Reach... the second planet of the human race after Earth
+            </p>
+            <p class="p_story1">
+              The Covenent Alliance has found it and they are coming to
+              exterminate us..
+            </p>
+            <p class="p_story1">
+              A first detachment of the covenent alliance made its way to us !
+            </p>
+            <p class="p_story1">
+              A small contingent of the UNSC high-loafers are completing
+              preparations to board the Pillar of Autumn, our last chance to
+              survive
+            </p>
+            <p class="p_story1">
+              You must take control of the FSS-1000 "Sabre" to shoot down these
+              first enemies !
+            </p>
+            <img id="img-halo" src="../style/img/pillarOfAutumn_Plan.jpeg" />
+          </div>
+        </div>
+      </div>
+      <button id="play">Play</button>
+    </div>
+
+    <!-- Story Section 2  -->
+
+    <div id="story2" class="story-section2" style="display: none">
+      <div class="container_story">
+        <div class="first_part">
+          <div class="overlayStory">
+            <p class="p_story1">
+              Good job Spartan! You just defeated the first wave of enemies !
+            </p>
+            <p class="p_story1">
+              Our intelligence services told us that it is a question of time
+              before their fleet lands in our system and sends more ships into
+              our airspace.
+            </p>
+            <p class="p_story1">
+              What awaits you are other Banshee class enemy ships,
+              maneuverability and precise...
+            </p>
+            <p class="p_story1">
+              You have already faced them in the past, so you know how to do it
+              !
+            </p>
+            <p class="p_story1">
+              They are going to be more aggressive, but our team of specialists
+              have reinforced the "Sabre" and increased your missile reserve !
+              Have no mercy..
+            </p>
+            <img id="img-halo" src="../style/img/banshee.png" />
+          </div>
+        </div>
+      </div>
+      <button id="level2">Go to level 2</button>
+    </div>
+
+    <!-- Story Section 3  -->
+
+    <div id="story3" class="story-section3" style="display: none">
+      <div class="container_story">
+        <div class="first_part">
+          <div class="overlayStory">
+            <p class="p_story1">
+              Spartan, the situation on the surface is critical : we are under
+              attack from all sides !!
+            </p>
+            <p class="p_story1">
+              You managed to get rid of these wretches, I congratulate you ! But
+              they came with higher class ships...
+            </p>
+            <p class="p_story1">
+              However, you will not be able to stop them on your own, so here is
+              your last mission under my command: do everything so that the
+              pillar of Autumn takes off and runs away..
+            </p>
+            <p class="p_story1">
+              I will try to retain as much as possible with the soldiers I have
+              left... it will give you a window to do what you have to do.
+            </p>
+            <p class="p_story1">
+              Survive, fight, perpetuate the human race and most importantly :
+              hit all !
+            </p>
+            <img class="img-halo" src="../style/img/Covenant-fleet.jpg" />
+          </div>
+        </div>
+      </div>
+      <button id="level3">Go to level 3</button>
+    </div>
+
+    <!-- Story Section 4 : WIN  -->
+
+    <div id="story4Win" class="story-section4Win" style="display: none">
+      <div class="container_story">
+        <div class="first_part">
+          <div class="overlayStory">
+            <p class="p_story1">
+              Congrats spartan ! You just defeated the last wave and you have
+              protected the ship !
+            </p>
+            <p class="p_story1">
+              Everything is not lost and there is still hope in these darkest
+              times..
+            </p>
+            <p class="p_story1">
+              I will fight until my last forces abandon me !
+            </p>
+            <p class="p_story1">
+              Do whatever it is needed to preserve the human race..
+            </p>
+          </div>
+        </div>
+        <img class="logo" src="../style/img/unsc.png" />
+      </div>
+      <button id="winPart" class="loose">Menu</button>
+    </div>
+
+    <!-- Story Section 4 : LOOSE  -->
+
+    <div id="story4Loose" class="story-section4Loose" style="display: none">
+      <div class="container_story">
+        <div class="first_part">
+          <div class="overlayStory">
+            <p class="p_story1">
+              The world known as Reach is in Covenant hands and exists no
+              longer..
+            </p>
+            <p class="p_story1">
+              The last chance, the last hope for Humans has been exterminated
+              without mercy..
+            </p>
+          </div>
+        </div>
+        <img
+          id="covenant_logo"
+          class="logo"
+          src="../style/img/covenant_logo.png"
+        />
+      </div>
+      <button id="loosePart" class="loose">Menu</button>
+    </div>
+
+    <!-- Parameters Section -->
+    <div id="parameters-section" class="param-screen">
+      <div class="menu">
+        <h1>HALO 3</h1>
+        <ul class="menu-list">
+          <li>
+            <span class="param-label">Move Left:</span>
+            <span class="param-value">Arrow left</span>
+          </li>
+          <li>
+            <span class="param-label">Move Right:</span>
+            <span class="param-value">Arrow right</span>
+          </li>
+          <li>
+            <span class="param-label">Shoot:</span>
+            <span class="param-value">Arrow up</span>
+          </li>
+          <li>
+            <span class="param-label">Pause:</span>
+            <span class="param-value">Space</span>
+          </li>
+          <li id="go-back">Menu</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="../make-your-game.js"></script>
+  </body>
+</html>

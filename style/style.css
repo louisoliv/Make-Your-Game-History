@@ -1,0 +1,593 @@
+@import url('https://fonts.cdnfonts.com/css/halo');
+@import url('https://fonts.cdnfonts.com/css/arcade-classic');
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("../style/img/halo-no-pixel.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.screen, .param-screen, .story-section1{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: start;
+}
+
+.game-section, .game-section1 {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.screen {
+    background-image: url("../style/img/halo3_bckg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.param-screen {
+    background-image: url("../style/img/halo_unsc.jpg");
+    display: none;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story-section1 {
+    background-image: url("../style/img/halo_bckg_Story.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_story {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    width: 60%;
+    overflow: auto;
+    position: relative;
+    padding: 20px;
+}
+
+.first_part {
+    /* background-color: black; */
+    width: 60%;
+    height: 60vh; /* Viewport height for better scaling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlayStory {
+    width: 95%;
+    /* background-color: cyan; */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+
+.p_story1 {
+    color: rgba(126, 252, 0, 0.877);
+    text-justify: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 10px 0; /* Space between paragraphs for better readability */
+}
+
+
+#play, #level2, #level3, .loose{
+    margin-top: 5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 10px 20px;
+    color: rgba(126, 252, 0, 0.877);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+
+
+.story-section2 {
+    background-image: url("../style/img/Halo_city.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+
+.p_story1 {
+    color: rgba(126, 252, 0, 0.877);
+    text-justify: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 10px 0; /* Space between paragraphs for better readability */
+}
+
+
+#play {
+    margin-top: 5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 10px 20px;
+    color: rgba(126, 252, 0, 0.877);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+
+
+.story-section3 {
+    background-image: url("../style/img/halo_space.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+
+.p_story1 {
+    color: rgba(126, 252, 0, 0.877);
+    text-justify: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 10px 0; /* Space between paragraphs for better readability */
+}
+
+.img-halo {
+    max-width: 80%; /* Ensure the image scales within the container */
+    margin: auto;
+    margin-top: 2vh;
+    height: auto; /* Maintain aspect ratio */
+}
+
+#play {
+    margin-top: 5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 10px 20px;
+    color: rgba(126, 252, 0, 0.877);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+
+
+.story-section4Win {
+    background-image: url("../style/img/pillarOfAutumn_Escape.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+
+.p_story1 {
+    color: rgba(126, 252, 0, 0.877);
+    text-justify: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 10px 0; /* Space between paragraphs for better readability */
+}
+
+
+.story-section4Loose {
+    background-image: url("../style/img/halo_Reach_Fall.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+
+.p_story1 {
+    color: rgba(126, 252, 0, 0.877);
+    text-justify: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 10px 0; /* Space between paragraphs for better readability */
+}
+
+
+
+.logo{
+    max-width: 60%;
+    max-height: 60%;
+    margin-bottom: 2vh;
+}
+
+.menu-container {
+    display: flex ;
+    align-items: center;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    
+
+}
+
+h1 {
+    font-family: 'Halo', sans-serif;
+    font-size: 120px;
+    background: linear-gradient(180deg, #003366, #0066CC, #3399FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+
+#sound, 
+#soundMuted {
+    width: 50px;
+    height: 50px;
+}
+
+#sound {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    color: #FFD700  ;
+}
+
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-list li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: #00BFFF;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+.menu-list li:hover {
+    color: #FFD700;
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+.param-label {
+    font-weight: bold;
+}
+
+.param-value {
+    font-style: italic;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+p {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.grid {
+    width: 800px;
+    height: 800px;
+    border: solid black 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.grid div {
+    width: 32px;
+    height: 32px;
+}
+
+.invader {
+    background-image: url("../style/img/ennemy.png");
+    background-repeat: no-repeat;
+}
+
+.shooter {
+    background-image: url("../style/img/player.png");
+}
+
+.laser {
+    background-image: url("../style/img/player_missile.png");
+}
+
+.boom {
+    background-color: red;
+    background-image: url('../style/img/XCVT.gif');
+    background-size: 100%;
+}
+
+#safeTimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 800px;
+    height: 40px;
+    background: linear-gradient(180deg, #003366, #0066CC, #3399FF);
+    font-family: 'ArcadeClassic', sans-serif;
+}
+
+#safeTimer p,
+#safeTimerDisplay {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.header {
+    font-family: 'Halo', sans-serif;
+    font-size: 50px;
+    color: white;
+    background-color: #003366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 70px;
+    margin: 10px auto;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.sub_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #003366;
+    width: 800px;
+    height: 40px;
+    margin: auto;
+    font-family: 'ArcadeClassic', sans-serif;
+    opacity: 0.9;
+}
+
+.results, #fps, #playerLives {
+    font-family: 'ArcadeClassic', sans-serif;
+    color: white;
+    z-index: 1000;
+}
+
+.pauseMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+}
+
+
+#close-popup, 
+#refresh-popup,
+#popup, 
+#overlay {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 10px 20px;
+    color: #00BFFF;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+#close-popup:hover, 
+#refresh-popup:hover,
+#popup:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+} 
+
+.footer {
+    background-color: rgba(91, 19, 207, 0.8);
+    width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    margin: 0 auto;
+    z-index: 1000;
+    font-family: 'ArcadeClassic', sans-serif;
+    letter-spacing: 4px;
+}
+
+#game-over-popup {
+    position: fixed; /* Positionnement fixe par rapport à la fenêtre du navigateur */
+    top: 50%; /* Centré verticalement */
+    left: 50%; /* Centré horizontalement */
+    transform: translate(-50%, -50%); /* Déplace la fenêtre popup de moitié sa largeur et hauteur pour un centrage parfait */
+    width: 80%; /* Largeur de la fenêtre popup */
+    max-width: 400px; /* Largeur maximale de la fenêtre popup */
+    padding: 20px;
+    background-color: rgb(44, 44, 44);
+    opacity: 0.8; /* Couleur de fond de la fenêtre popup */
+    border-radius: 10px; /* Bord arrondi de la fenêtre popup */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Ombre de la fenêtre popup */
+    text-align: center; /* Centrage du texte */
+    z-index: 1000; /* Assure que la fenêtre popup est au-dessus des autres éléments */
+    display: flex;
+    flex-direction: column;
+}
+#game-over-popup h2 {
+  
+    /* text-align: center;
+    color: red; */
+    font-family: 'Halo', sans-serif;
+    font-size: 70px;
+    background: linear-gradient(180deg, #003366, #0066CC, #3399FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#game-over-popup button {
+    margin-top: 20px; /* Espacement au-dessus du bouton */
+    padding: 10px 20px; /* Espacement à l'intérieur du bouton */
+    font-size: 16px; /* Taille du texte du bouton */
+    border: none; /* Pas de bordure autour du bouton */
+    background-color: #007BFF; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border-radius: 5px; /* Bord arrondi du bouton */
+    cursor: pointer; /* Change le curseur en main lorsque vous survolez le bouton */
+}
+#game-over-popup button:hover {
+    background-color: #0056b3; /* Change la couleur de fond du bouton lorsque vous survolez */
